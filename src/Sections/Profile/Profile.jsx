@@ -2,15 +2,15 @@ import React from 'react'
 import styles from './ProfileStyles.module.css'
 import profImg from '../../assets/Profile-2.png'
 import lightMode from '../../assets/sun.png'
-import DarkMode from '../../assets/night-mode.png'
+import DarkMode from '../../assets/icons8-crescent-moon-50.png' 
 import CV from '../../assets/CV Diniru Karunarathne.pdf'
 import { useTheme } from '../../Components/Theme/ThemeContext'
 
 function Profile() {
     const { theme , toggleTheme } = useTheme();
     const themeIcon = theme === 'light' ? lightMode : DarkMode;
-    const githubIcon = theme === 'light' ? 'https://img.icons8.com/?size=50&id=12599&format=png&color=000000' : 'https://img.icons8.com/?size=50&id=12598&format=png&color=000000';
-    const linkedinIcon = theme === 'light' ? 'https://img.icons8.com/?size=50&id=8808&format=png&color=000000' : 'https://img.icons8.com/?size=50&id=447&format=png&color=000000';
+    const githubIcon = theme === 'light' ? 'https://img.icons8.com/?size=30&id=12599&format=png&color=000000' : 'https://img.icons8.com/?size=30&id=12599&format=png&color=FFFFFF';
+    const linkedinIcon = theme === 'light' ? 'https://img.icons8.com/?size=30&id=8808&format=png&color=000000' : 'https://img.icons8.com/?size=30&id=8808&format=png&color=FFFFFF';
 
   return (
     <section id='Profile' className={styles.container}>
@@ -20,16 +20,18 @@ function Profile() {
         </div>
         <div className={styles.info}>
             <h1>Diniru <br/> Karunarathna</h1>
-            <h1>Software Engineer</h1>
+            <h2>Software Engineer</h2>
             <span>
-                <a href="https://www.linkedin.com/in/diniru-karunarathna-47a760215/" target='_blank'>
-                    <img src={linkedinIcon} alt="linkedin"/>
-                </a>
-                <a href="https://github.com/DiniruKarunarathne" target='_blank'>
-                    <img src={githubIcon} alt="github"/>
-                </a>
+            <div className={styles.socialLinks}>
+                    <a href="https://www.linkedin.com/in/diniru-karunarathna-47a760215/" target='_blank' rel='noopener noreferrer'>
+                        <img src={linkedinIcon} alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/DiniruKarunarathne" target='_blank' rel='noopener noreferrer'>
+                        <img src={githubIcon} alt="GitHub" />
+                    </a>
+                </div>
             </span>
-            <p>
+            <p className={styles.description}>
                 Crafting intuitive and responsive user interfaces with modern web technologies.
             </p>
             <a href={CV} download>
