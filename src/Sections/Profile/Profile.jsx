@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './ProfileStyles.module.css'
 import profImg from '../../assets/Profile-2.png'
-import lightMode from '../../assets/sun.png'
-import DarkMode from '../../assets/icons8-crescent-moon-50.png' 
+import lightMode from '../../assets/darkmode.png'
+import DarkMode from '../../assets/lightmode.png' 
 import CV from '../../assets/CV Diniru Karunarathne.pdf'
 import { useTheme } from '../../Components/Theme/ThemeContext'
 

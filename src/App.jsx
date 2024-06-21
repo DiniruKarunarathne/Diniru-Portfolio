@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './Components/Header/Header'
 import Profile from './Sections/Profile/Profile'
+import Projects from './Sections/Projects/Projects'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header/>
       <Profile/>
+      <Projects/>
     </>
   )
 }
