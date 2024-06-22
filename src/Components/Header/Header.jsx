@@ -11,8 +11,8 @@ const Header = () => {
         <div>
           <ul className={styles.navLinks}>
             <li><a href="#about" className={styles.navLink}>About</a></li>
-            <li><a href="#experience" className={styles.navLink}>Experience</a></li>
             <li><a href="#projects" className={styles.navLink}>Projects</a></li>
+            <li><a href="#experience" className={styles.navLink}>Experience</a></li>
             <li><a href="#contact" className={styles.navLink}>Contact</a></li>
           </ul>
         </div>

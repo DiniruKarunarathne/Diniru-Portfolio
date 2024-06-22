@@ -35,7 +35,7 @@ function Profile() {
                 Crafting intuitive and responsive user interfaces with modern web technologies.
             </p>
             <a href={CV} download>
-                <button className='hover' >Download CV</button>
+                <button className='hover btn' >Download CV</button>
             </a>
         </div>
     </section>
