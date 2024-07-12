@@ -40,7 +40,7 @@ function Projects() {
               <button onClick={() => window.location.href = project.github}>Github</button>
               {/* Conditionally render the Live Demo button only if the index is 1 */}
               {index === 0 && (
-                <button onClick={() => window.location.href = project.demo}>Live Demo</button>
+                <button onClick={() => window.open(project.demo, '_blank')}>Live Demo</button>
               )}
             </div>
           </div>

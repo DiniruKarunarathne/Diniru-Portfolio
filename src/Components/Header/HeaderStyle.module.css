@@ -1,16 +1,18 @@
-.container {
+
+   .container {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-
+  
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    color:var(--text-color);
-    
+    color: var(--text-color);
+    position: relative; /* Make sure the header is positioned correctly */
+    z-index: 10; /* Ensure the header is above other content */
   }
   
   .logo {
@@ -27,9 +29,67 @@
   .navLink {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
   }
   
- 
+  /* Mobile styles */
+  .mobileNav {
+    display: none;
+  }
+
+  .menu {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Position the sidebar on the right */
+    width: 50%;
+    background-color: var(--background-color);
+    padding: 1em;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Adjust shadow direction */
+    display: flex;
+    flex-direction: column;
+    z-index: 100; /* Ensure the sidebar overlays other content */
+    gap: 1em; 
+  }
+  
+  .closeButton {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  
+  .navLinksMobile {
+    list-style: none;
+    padding: 0;
+  }
+  .navLinksMobile li {
+    margin-bottom: 1.5em; 
+  }
+  
+  
+  .navLinksMobile .navLink {
+    padding: 2px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .desktopNav {
+      display: none;
+    }
+  
+    .mobileNav {
+      display: block;
+    }
+  }
   

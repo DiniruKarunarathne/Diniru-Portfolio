@@ -20,7 +20,7 @@ function Profile() {
         </div>
         <div className={styles.info}>
             <h1>Diniru <br/> Karunarathna</h1>
-            <h2>Software Engineer</h2>
+            <h2>Software Developer</h2>
             <span>
             <div className={styles.socialLinks}>
                     <a href="https://www.linkedin.com/in/diniru-karunarathna-47a760215/" target='_blank' rel='noopener noreferrer'>
